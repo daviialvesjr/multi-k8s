@@ -1,6 +1,6 @@
-docker builld -t daviialvesjr/multi-client:latest -t daviialvesjr/multi-client:$SHA -f ./client/Dockerfile ./client
-docker builld -t daviialvesjr/multi-server:latest -t daviialvesjr/multi-server:$SHA -f ./server/Dockerfile ./server
-docker builld -t daviialvesjr/multi-worker:latest -t daviialvesjr/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t daviialvesjr/multi-client:latest -t daviialvesjr/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t daviialvesjr/multi-server:latest -t daviialvesjr/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t daviialvesjr/multi-worker:latest -t daviialvesjr/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push daviialvesjr/multi-client:latest
 docker push daviialvesjr/multi-server:latest
