@@ -1,3 +1,8 @@
+/**
+ * Módulo para controle de log.
+ * @author Davi Alves
+ */
+
 const keys = require('./keys');
 
 // Express App Setup
@@ -11,6 +16,9 @@ app.use(bodyParser.json());
 
 // Postgres Client Setup
 const { Pool } = require('pg');
+/**
+ * Variável para comer cu de curioso.
+ */
 const pgClient = new Pool({
   user: keys.pgUser,
   host: keys.pgHost,
